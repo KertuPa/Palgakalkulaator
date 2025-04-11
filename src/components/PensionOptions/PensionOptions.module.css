@@ -1,0 +1,48 @@
+.pensionOptions {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.pensionOptionsLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.pensionOptionsItem {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-white);
+    box-shadow: var(--shadow-small);
+    font-size: var(--font-md);
+    margin-top: 8px;
+    color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.65rem auto;
+    appearance: none;
+}
+
+.pensionOptionsItem:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.3);
+}
+
+.pensionOptions {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .pensionOptionsLabel {
+        display: block;
+    }
+}

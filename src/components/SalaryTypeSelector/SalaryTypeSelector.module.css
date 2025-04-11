@@ -1,0 +1,28 @@
+.salaryType {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.salaryTypeButton {
+    padding: 1.2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.salaryTypeButton:hover {
+    color: var(--color-white);
+}
+
+.salaryTypeButton:disabled {
+    background: #a0aec0;
+    cursor: not-allowed;
+}
+
+.active {
+    background: var(--color-darkgreen);
+    color: var(--color-white);
+    box-shadow: 0 4px 12px rgba(56, 178, 172, 0.5);
+}

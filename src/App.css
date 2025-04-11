@@ -1,0 +1,18 @@
+.app-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-medium);
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+    }
+}

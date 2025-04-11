@@ -1,0 +1,22 @@
+:root {
+    /* Colors*/
+    --color-primary: #38b2ac;
+    --color-secondary: #1d3557;
+    --color-darkgreen: #0b7285;
+    --color-lightgrey: #f0f4f8;
+    --color-white: #ffffff;
+    --color-lightblue: #e6f0fa;
+    --color-teal: #d4f1f4;
+    --color-border: #bcd0e0;
+
+    /*Shadows*/
+    --shadow-small: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-inset: inset 0 2px 5px rgba(255, 255, 255, 0.6), inset 0 -2px 5px rgba(0, 0, 0, 0.05);
+
+    /*Font sizes*/
+    --font-sm: 0.9rem;
+    --font-md: 1rem;
+    --font-lg: 2em;
+    --font-xl: 3.2em;
+}

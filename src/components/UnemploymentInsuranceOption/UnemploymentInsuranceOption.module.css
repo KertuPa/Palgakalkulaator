@@ -1,0 +1,21 @@
+.unemploymentInsuranceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employeeInsuranceLabel,
+.employerInsuranceLabel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.employeeInsuranceLabel {
+    margin-bottom: 20px;
+}
+
+.unemploymentOptionsCheckbox {
+    margin-right: 8px;
+}

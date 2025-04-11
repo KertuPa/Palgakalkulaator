@@ -1,0 +1,114 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: var(--color-lightgrey);
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-xl);
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-darkgreen);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: var(--font-lg);
+    }
+
+    #root {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.button-primary {
+    width: 100%;
+    font-size: var(--font-md);
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    transition:
+        background 0.3s,
+        transform 0.2s;
+}
+
+.button-primary:focus {
+    outline: none;
+}
+
+.button-primary:hover {
+    background: linear-gradient(to right, #2c7a7b, #2b6cb0);
+    transform: translateY(-2px);
+}
+
+.card {
+    background: var(--color-lightblue);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-inset);
+    margin-bottom: 20px;
+}
+
+.default_checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom_checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+}
+
+.default_checkbox:checked + .custom_checkbox {
+    background-color: var(--color-primary);
+}
+
+.default_checkbox:checked + .custom_checkbox::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 480px) {
+    .custom_checkbox {
+        margin-right: 10px;
+    }
+}

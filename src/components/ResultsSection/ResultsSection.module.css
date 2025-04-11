@@ -1,0 +1,19 @@
+.results {
+    font-size: var(--font-md);
+    margin: 0.5rem 0;
+}
+
+.aiComment {
+    margin-top: 1.5rem;
+    background: var(--color-teal);
+    padding: 1rem;
+    border-radius: 10px;
+    font-style: italic;
+    color: var(--color-secondary);
+}
+
+.resultsButton {
+    padding: 1rem;
+    font-size: var(--font-md);
+    margin-top: 15px;
+}
