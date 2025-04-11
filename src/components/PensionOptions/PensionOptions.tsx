@@ -33,7 +33,7 @@ export const PensionOptions: React.FC<Props> = ({
                     <select
                         className={styles.pensionOptionsItem}
                         style={{
-                            backgroundImage:`url(${arrowDown})`
+                            backgroundImage: `url("${arrowDown}")`
                         }}
                         value={pensionPercentage}
                         onChange={(e) => setPensionPercentage(Number(e.target.value))}
